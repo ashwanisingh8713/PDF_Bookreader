@@ -104,7 +104,7 @@ public abstract class BaseFragment extends Fragment {
                 .getApplicationContext()) : this.activity.getApplicationContext();
     }
 
-    protected LayoutInflater getLayoutInflater() {
+    protected LayoutInflater getLayoutInflaterr() {
         return inflater;
     }
 

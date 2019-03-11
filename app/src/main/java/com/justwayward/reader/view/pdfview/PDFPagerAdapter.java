@@ -67,14 +67,15 @@ public class PDFPagerAdapter extends BasePDFPagerAdapter
         attachers.put(position, new WeakReference<PhotoViewAttacher>(attacher));
 
         iv.setImageBitmap(bitmap);
-        attacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
+        // Commented By Ashwani
+        /*attacher.setOnPhotoTapListener(new PhotoViewAttacher.OnPhotoTapListener() {
             @Override
             public void onPhotoTap(View view, float x, float y) {
                 if (pageClickListener != null) {
                     pageClickListener.onPageTap(view, x, y);
                 }
             }
-        });
+        });*/
         attacher.update();
         container.addView(v, 0);
 
