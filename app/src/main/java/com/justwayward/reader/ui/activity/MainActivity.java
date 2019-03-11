@@ -93,9 +93,9 @@ public class MainActivity extends BaseActivity implements MainContract.View, Log
     @Inject
     MainActivityPresenter mPresenter;
 
-    // 退出时间
+    // Exit time
     private long currentBackPressedTime = 0;
-    // 退出间隔
+    // Exit interval
     private static final int BACK_PRESSED_INTERVAL = 2000;
 
     private LoginPopupWindow popupWindow;
